@@ -63,6 +63,8 @@ function displayGifs() {
             gifImage.addClass("image");
             gifDiv.append(gifImage);
             $("#gifsView").prepend(gifDiv);
+            var gifRating = $("<p>").text("Title: " + results[i].title);
+                    gifDiv.append(gifRating);
         }
     });
 }
